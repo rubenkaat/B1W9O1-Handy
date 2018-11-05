@@ -1,0 +1,425 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Archivo', sans-serif;
+}
+
+p h1{
+ 	font-family: 'Archivo', sans-serif;
+}
+
+.webpage {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#grid {
+	display: grid;
+	grid-template-rows: 60px 90px;
+	grid-template-columns: 950px;
+}
+
+#logo {
+	margin-top: 20px;
+	margin-left: 290px;
+	grid-row-start: 1;
+	grid-row-end: 1;
+}
+
+#navbar {
+	list-style: none;
+	display: inline-block;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	background: #222931;
+	z-index: 1;
+	margin-left: 260px;
+	font-weight: 500;
+	width: 950px;
+}
+
+#navbar li {
+	display: inline-block;
+	height: 50px;
+}
+
+#navbar li a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 0px 10px;
+	line-height: 58px
+}
+
+#navbar li:hover {
+	background-color: #ffe718;
+	padding-bottom: 8px;
+}
+
+#navbar a:hover {
+	color: black;
+}
+
+#navbar li ul li{
+	display: none;
+}
+
+#navbar li:hover ul li{
+	display: block;
+	padding-bottom: 0;
+}
+
+#navbar li ul li a {
+	position: absolute;
+	background: black;
+	padding: 0px 10px;	
+	width: 97px;
+	left: 373px;
+}
+
+#navbar li ul li a:hover {
+	background-color: #ffe718;
+}
+
+#arrow {
+	position: relative;
+	font-size: 15px;
+	color: white;
+}
+
+#header_img {
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	position: relative;
+	bottom: 45px;
+	z-index: 0;
+}
+
+#bannerfotos {
+	margin-bottom: 50px;
+	display: grid;
+	grid-template-columns: 300px 300px 300px;
+	column-gap: 20px;
+	margin-left: 25px;
+	margin-top: 5px;
+}
+
+#banner1 {
+	grid-column-start: 1;
+	grid-column-end: 1;
+}
+
+.banner1blind {
+	background-color: rgba(34,41,49,0.8);
+	width: 300px;
+	height: 220px;
+	position: absolute;
+	display: block;
+	bottom: -114px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#banner1div:hover .banner1blind {
+	opacity: 1;
+}
+
+#banner1blindtext {
+	position: absolute;
+	color: white;
+	text-decoration: none;
+	font-size: 32px;
+	left: 30px;
+	top: 90px;
+	font-weight: 500;
+} 
+
+#banner2 {
+	grid-column-start: 2;
+	grid-column-end: 2;
+}
+
+
+.banner2blind {
+	background-color: rgba(34,41,49,0.8);
+	width: 300px;
+	height: 220px;
+	position: absolute;
+	display: block;
+	bottom: -114px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#banner2div:hover .banner2blind {
+	opacity: 1;
+}
+
+#banner2blindtext {
+	position: absolute;
+	color: white;
+	text-decoration: none;
+	font-size: 32px;
+	left: 100px;
+	top: 90px;
+	font-weight: 500;	
+} 
+
+#banner3 {
+	grid-column-start: 3;
+	grid-column-end: 3;
+}
+
+.banner3blind {
+	background-color: rgba(34,41,49,0.8);
+	width: 300px;
+	height: 220px;
+	position: absolute;
+	display: block;
+	bottom: -114px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#banner3div:hover .banner3blind {
+	opacity: 1;
+}
+
+#banner3blindtext {
+	position: absolute;
+	color: white;
+	text-decoration: none;
+	font-size: 32px;
+	left: 70px;
+	top: 90px;
+	font-weight: 500;	
+} 
+
+#yellowbar {
+	background-color: #ffe718;
+	display: grid;
+	grid-template-columns: 655px 130px;
+	grid-template-rows: auto; 
+}
+
+#yellowbarbigletters {
+	grid-column-start: 1; 
+	grid-column-end: 1;
+	grid-row-start: 1;
+	grid-row-end: 1;
+	font-size: 34px;
+	margin-left: 270px;
+	font-weight: 700;
+}
+
+#yellowbarsmallletters {
+	grid-column-start: 2;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 1;
+	font-size: 16px;
+	margin-top: 50px;
+	font-weight: 700;
+}
+
+#button {
+	position: relative;
+	background-color: #ffffff; 
+	padding:10px 40px;
+	left: 1080px;
+	bottom: 85px;
+	font-weight: 500;
+	width: 100px;
+	text-align: center;
+	transition: 0.5s;
+}
+
+#button:hover {
+	color:white;
+	background-color: #222931;
+}
+
+#footer_img {
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+}
+
+#footerblocks {
+	display: grid;
+	position: relative;
+	grid-template-columns: 300px 300px 300px;
+	bottom: 70px;
+	column-gap: 20px;
+	margin-left: 40px;
+	margin-bottom: 50px;
+}
+
+.blocktext {
+	margin-left: 100px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#deals {
+	background-color: #ffe718;
+	margin-top: 20px;
+	font-weight: 600;
+	transition: 0.5s;	
+}
+
+#deals:hover {
+	color:white;
+	background-color: #222931;
+}
+
+#diensten {
+	background-color: #ffe718;
+	margin-top: 20px;
+	font-weight: 600;
+	transition: 0.5s;	
+}
+
+#diensten:hover {
+	color:white;
+	background-color: #222931;
+}
+
+#contactbanner {
+	background-color: #ffe718;
+	margin-top: 20px;
+	font-weight: 600;
+	transition: 0.5s;	
+}
+
+#contactbanner:hover {
+	color:white;
+	background-color: #222931;
+}
+
+#handshake {
+	position: absolute;
+	font-size: 50px;
+	right: 880px;
+	top: 40px;	
+}
+
+#toolbox {
+	position: absolute;
+	font-size: 50px;
+	right: 565px;
+	top: 35px;	
+}
+
+#envelope {
+	position: absolute;
+	font-size: 55px;
+	right: 240px;
+	top: 35px;
+}
+
+.blockbigletters {
+	font-size: 22px;
+}
+
+.blocksmallletters {
+	position: relative;
+	bottom: 10px;
+	font-size: 14px;
+}
+
+#line {
+	position: relative;
+	bottom: 40px;
+	opacity: 0.2;
+}
+
+#details {
+	display: grid;
+	grid-template-columns: 485px 500px; 
+	margin-left: 40px;
+}
+
+#overons {
+	grid-column-start: 1;
+	grid-column-end: 1;
+	margin-bottom: 5px;
+}
+
+#overonstitel {
+	margin-bottom: 40px;
+	font-size: 32px;
+	font-weight: 600;
+}
+
+#loremtext {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+#contact {
+	grid-column-start: 2;
+	grid-column-end: 2;
+	margin-left: 140px;
+	margin-bottom: 40px;
+}
+
+#contacttitel {
+	font-size: 32px;
+	font-weight: 600;
+}
+
+#detailstext1 {
+	font-size: 14px;
+	font-weight: 400;
+	margin-left: 35px;
+	margin-bottom: 27px;
+}
+
+#detailstext2 {
+	font-size: 14px;
+	font-weight: 400;
+	margin-left: 35px;
+	margin-bottom: 27px;	
+}
+
+#detailstext3 {
+	font-size: 14px;
+	font-weight: 400;
+	margin-left: 35px;
+}
+
+#mapmarker {
+	color: #aeb6be; 
+	position: absolute;
+	font-size: 25px;
+	top: 1560px;
+}
+
+#mobile {
+	color: #aeb6be; 
+	position: absolute;
+	font-size: 25px;
+	top: 1605px;
+	margin-left: 2px;	
+}
+
+#envelope2 {
+	color: #aeb6be; 
+	position: absolute;
+	font-size: 25px;
+	top: 1650px;	
+	right: 572px;
+}
+
+#footer {
+	background-color: black;
+	padding: 2.5px;
+}
+
+#name {
+	color: white;
+	margin-left: 1010px;
+}
